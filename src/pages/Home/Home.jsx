@@ -1,8 +1,14 @@
+import Rooms from "../../components/Rooms/Rooms"
+import Container from "../../components/Shared/Container"
+
 const Home = () => {
   return (
-    <div>
-      <h1>Welcome to StayVista</h1>
-    </div>
+    <Container>
+      {/* categories section */}
+      {/* rooms section */}
+      <Rooms></Rooms>
+    </Container>
+
   )
 }
 
