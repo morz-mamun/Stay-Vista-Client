@@ -22,10 +22,11 @@ const CategoryBox = ({ label, icon: Icon, selected }) => {
     }
   };
   params.get("category");
+  
   return (
     <div
       onClick={handleClick}
-      className={`flex flex-col items-center justify-center gap-2 p-3 hover:font-bold transition cursor-pointer hover:border-red-600 ${selected ? 'border-b-2 border-red-600' : ''}`}
+      className={`flex flex-col items-center justify-center gap-2 p-3 border-b-2 hover:font-bold transition cursor-pointer ${selected ? 'border-b-2 border-red-600' : ''}`}
     >
       <Icon size={26}></Icon>
       <div>{label}</div>
