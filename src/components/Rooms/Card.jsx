@@ -1,7 +1,6 @@
 
 const Card = ({room}) => {
-    console.log(room);
-    const {title, price} = room
+    const {title, price, image} = room
     return (
       <div className='col-span-1 cursor-pointer group'>
         <div className='flex flex-col gap-2 w-full'>
@@ -22,7 +21,7 @@ const Card = ({room}) => {
                 hover:scale-110 
                 transition
               '
-              src='https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg'
+              src={image}
               alt='Room'
             />
             <div
@@ -39,8 +38,8 @@ const Card = ({room}) => {
             5 nights.
           </div>
           <div className='flex flex-row items-center gap-1'>
-            <div className='font-semibold'>{price}</div>
-            <div className='font-light'>night</div>
+            <div className='font-semibold'>${price}</div>
+            <div className='font-light'>Per Night</div>
           </div>
         </div>
       </div>
